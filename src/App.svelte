@@ -1,10 +1,10 @@
 <script lang="ts">
-	let name = "world";
+	import Grid from "./Grid.svelte";
 </script>
 
 <div class="flex">
 	<div class="sidebar side1">Sidebar 1</div>
-	<div class="grid"><h1>Hello {name}!</h1></div>
+	<div class="grid"><Grid /></div>
 	<div class="sidebar side2">Sidebar 2</div>
 </div>
 
