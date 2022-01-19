@@ -1,10 +1,12 @@
 <script lang="ts">
 	import Grid from "./Grid.svelte";
+
+	let grid = Array(81).fill({});
 </script>
 
 <div class="flex">
 	<div class="sidebar side1">Sidebar 1</div>
-	<div class="grid"><Grid /></div>
+	<div class="grid"><Grid bind:grid /></div>
 	<div class="sidebar side2">Sidebar 2</div>
 </div>
 
