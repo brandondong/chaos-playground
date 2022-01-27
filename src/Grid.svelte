@@ -1,11 +1,12 @@
 <script lang="ts">
+    import type { GridData } from "./grid";
     const TOTAL_SIZE = 100;
     const GRID_SIZE = 75;
     const GRID_STROKE = 0.2;
     const REGION_STROKE = 1;
 
-    export let grid;
-    $: dimension = Math.sqrt(grid.length);
+    export let grid: GridData;
+    $: dimension = grid.dimension();
     $: cellSize = GRID_SIZE / dimension;
 </script>
 

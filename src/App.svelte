@@ -1,7 +1,8 @@
 <script lang="ts">
 	import Grid from "./Grid.svelte";
+	import { GridData } from "./grid";
 
-	let grid = Array(81).fill({});
+	let grid = GridData.initEmpty(7);
 </script>
 
 <div class="flex">
